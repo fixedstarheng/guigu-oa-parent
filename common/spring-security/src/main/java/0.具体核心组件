@@ -1,0 +1,8 @@
+#自定义3个组件
+    1.UserDetails自定义 :用于封装用户信息
+    2.loadUserByUsername: 获取用户信息
+    3.passwordEncoder: 密码校验器(校验工具) 内部 MD5校验输入密码与数据库密码是否一致
+#用户登录认证具体核心组件
+    1.登录Filter:判断用户名和密码是否正确，生成token
+    2.认证解析token组件：判断请求头是否有token，如果有认证完成
+    3.在配置类配置相关认证类
